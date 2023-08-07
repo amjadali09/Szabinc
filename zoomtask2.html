@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 100vh;
+  }
+
+  header {
+    background-color: #FF5733;
+    padding: 20px;
+    text-align: center;
+    grid-column: 1 / -1;
+  }
+
+  .sections-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .section {
+    padding: 40px;
+    text-align: center;
+    color: #FFF;
+  }
+
+  .left-section {
+    background-color: #3498DB;
+  }
+
+  .middle-section {
+    background-color: #27AE60;
+  }
+
+  .right-section {
+    background-color: #E74C3C;
+  }
+
+  footer {
+    background-color: #8E44AD;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    grid-column: 1 / -1;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Header Faction</h1>
+  </header>
+
+  <div class="sections-container">
+    <div class="section left-section">
+      <h2>Left Section</h2>
+      <p>This is the left section content.</p>
+    </div>
+
+    <div class="section middle-section">
+      <h2>Middle Section</h2>
+      <p>This is the middle section content.</p>
+    </div>
+
+    <div class="section right-section">
+      <h2>Right Section</h2>
+      <p>This is the right section content.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Footer Faction</p>
+  </footer>
+</body>
+</html>
